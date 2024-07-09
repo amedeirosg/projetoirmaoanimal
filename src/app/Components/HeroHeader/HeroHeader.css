@@ -1,0 +1,139 @@
+.HeroHeaderContainer{
+    display:flex;
+    padding: 0 10rem;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-repeat: repeat;
+    height: 600px;
+    position:relative;
+}
+
+.HeroHeaderTitle{
+    display:flex;
+    flex-direction: column;
+    gap:.5rem;
+    color:#fff;
+}
+
+.HeroHeaderTitle h2{
+    font-weight: normal;
+}
+
+.HeroHeaderLeftSide{
+    display:flex;
+    flex-direction: column;
+    gap:1rem;
+    justify-content: center;
+    width: 50%;
+}
+
+.HeroHeaderBtns{
+    display:flex;
+    gap:1rem;
+}
+
+.leftBtn,.rightBtn,.mobileQRCode{
+    all:unset;
+    border-radius:0.25rem;
+    cursor:pointer;
+    font-weight: bold;
+    padding:1rem;
+    min-width: 4rem;
+    font-weight: normal;
+}
+
+.leftBtn{
+    color:white;
+    background: var(--orange);
+}
+
+.rightBtn{
+    color: #fff;
+    border:2px solid var(--orange);
+}
+
+.HeroHeaderRightSide{
+    display:flex;
+    flex-direction: column;
+    gap:1rem;
+    align-items: center;
+    text-align: center;
+    color:#fff;
+    justify-content: center;
+}
+
+.HeroHeaderImg{
+    position: absolute;
+    top:0;
+    left:0;
+    background-image: url('../../../assets//bgHeroHeaderpng.png');
+    width: 100%;
+    height: 600px;
+    z-index:-1;
+}
+
+.HeroHeaderMobileQRCode button{
+    color:white;
+    background: var(--orange);
+    font-size:14px;
+}
+
+.HeroHeaderMobileQRCode{
+    display:none;
+}
+
+@media(max-width:1000px){
+    .HeroHeaderContainer{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap:5rem;
+        padding:0 2rem;
+        height: 800px;
+    }
+
+    .HeroHeaderImg{
+        background-repeat: no-repeat;
+        height: 100%;
+        background-size: cover;
+        background-position: center;
+    }
+
+    .HeroHeaderLeftSide,.HeroHeaderRightSide{
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        width: 100%;
+    }
+
+  
+}
+
+@media(max-width:768px){
+
+    .HeroHeaderLeftSide h1{
+        font-size:20px;
+    }
+
+    .HeroHeaderLeftSide h2,.leftBtn,.rightBtn{
+        font-size:14px;
+    }
+
+    .HeroHeaderBtns{
+        flex-direction: column;
+    }
+
+    .HeroHeaderRightSide h2{
+        font-size:14px;
+    }
+
+    .HeroHeaderMobileQRCode{
+        display:flex;
+    }
+
+    .qrcode{
+        width: 200px;
+        height: 200px;
+    }
+
+}

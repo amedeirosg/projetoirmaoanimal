@@ -1,0 +1,87 @@
+.FooterContainer{
+    display:flex;
+    justify-content: space-between;
+    padding: 5rem 10rem;
+    background: var(--brown);
+    margin-top:5rem;
+    gap:5rem;
+    color:white;
+}
+
+.FooterContact, .FooterAboutUs,.FooterStuffs{
+    display:flex;
+    flex-direction: column;
+    gap:.5rem;
+    font-size: 12px;
+}
+
+.FooterAboutUs{
+    width: 40%;
+}
+
+.FooterNav{
+    display:flex;
+    gap:1rem;
+}
+
+.FooterStuffs{
+    display:flex;
+    flex-direction: column;
+    gap:2rem;
+}
+
+.FooterSocial{
+    display:flex;
+    gap:1rem;
+}
+
+.FooterNav{
+    font-weight: bold;
+    font-size:16px;
+    cursor:pointer;
+}
+
+.FooterContactIcoMail,.FooterInsta,.FooterFace{
+    display:flex;
+    gap:.5rem;
+    align-items: center;
+    cursor:pointer;
+}
+
+.FooterContact h1{
+    font-weight: 500;
+}
+
+
+@media(max-width:1000px){
+    .FooterContainer{
+        padding: 5rem 2rem;
+    }
+
+    .FooterContact,.FooterAboutUs,.FooterStuffs{
+        width: 100%;
+        align-items: center;
+    }
+}
+
+@media(max-width:768px){
+    .FooterContainer{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .FooterContact h1, .FooterAboutUs h1{
+        font-size:18px;
+    }
+
+    .FooterContactIcoMail span, .FooterAboutUs span{
+        font-size:14px;
+    }
+
+    .FooterSocial{
+        justify-content: center;
+        align-items: center;
+    }
+}

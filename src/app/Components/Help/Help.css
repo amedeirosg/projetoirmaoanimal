@@ -1,0 +1,79 @@
+.HelpContainer{
+    display:flex;
+    flex-direction: column;
+    padding: 42px 10rem;
+    margin-top:5rem;
+    gap:2rem;
+    background: var(--yellow);
+}
+
+.HelpArea{
+    display:grid;
+    grid-template-columns: repeat(3,1fr);
+    gap:5rem;
+    grid-template-rows: auto auto;
+}
+
+.HelpTags{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap:0.5rem;
+    cursor: pointer;
+}
+
+.HelpTags h2{
+    font-family: "Poppins";
+    font-weight: 500;
+}
+
+.HelpArea > .HelpTags:nth-child(4){
+    grid-column: 2 / span 1;
+}
+
+
+.group:hover > :not(:hover){
+    opacity:.4;
+    transform: scale(0.9)
+}
+
+.item{
+    transition:.35s;
+    cursor: pointer;
+}
+
+@media (max-width:1000px){
+    .HelpArea{
+        grid-template-columns: repeat(2,1fr);
+    }
+
+    .HelpContainer{
+        padding: 42px 2rem;
+    }
+}
+
+@media(max-width:768px){
+
+    .HelpContainer h2{
+        font-size:18px;
+    }
+
+    .HelpArea{
+        grid-template-columns: 1fr;
+    }
+
+    .HelpTags h2{
+        font-size: 18px;
+        font-weight: 500;
+    }
+
+    .HelpTags span{
+        font-size:14px;
+    }
+
+    .HelpArea > .HelpTags:nth-child(4){
+        grid-column: 1;
+    }
+}

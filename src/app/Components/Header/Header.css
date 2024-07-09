@@ -1,0 +1,43 @@
+.HeaderContainer{
+    background: var(--yellow);
+    height:4rem;
+    padding:0 10rem;
+    display:flex;
+    justify-content: space-between;
+    align-items:center;
+}
+
+.HeaderSocial{
+    display:flex;
+    gap:1rem;
+}
+
+.HeaderNav{
+    display:flex;
+    gap:2rem;
+}
+
+.HeaderInsta, .HeaderFacebook{
+    display:flex;
+    gap:.5rem;
+    align-items: center;
+    cursor: pointer;
+}
+
+.navOptions{
+    cursor:pointer;
+}
+
+.linkInst{
+    all:unset;
+}
+
+@media (max-width:1000px){
+    .HeaderSocial,.HeaderNav{
+        display:none;
+    }
+
+    .HeaderContainer{
+        justify-content: center;
+    }
+}

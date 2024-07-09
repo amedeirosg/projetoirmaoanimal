@@ -1,0 +1,47 @@
+.ActionsContainer{
+    padding: 0 10rem;
+    display:flex;
+    flex-direction: column;
+    gap:2rem;
+}
+
+.ActionsArea{
+    width: 100%;
+    height: 600px;
+    position: relative;
+    border-radius:0.5rem;
+}
+
+.ActionsArea{
+    display:flex;
+    justify-content: space-between;
+}
+
+.ActionsEachOne{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 20%;
+    text-align: center;
+    gap:1rem;
+}
+
+.ActionsEachOne h2{
+    font-weight: 500;
+}
+
+
+@media (max-width:1000px){
+    .ActionsContainer{
+        margin-top:5rem;
+        padding:0 2rem;
+    }
+}
+
+@media(max-width: 768px){
+   
+    .ActionsContainer h2{
+        font-size:18px;
+    }
+}
