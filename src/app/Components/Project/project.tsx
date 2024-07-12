@@ -27,7 +27,7 @@ export default function Project() {
   ];
 
   return (
-    <div className="ProjectContainer">
+    <div className="ProjectContainer" id="project">
       <div className="ProjectTitle">
         <h2>O projeto irmão animal</h2>
         <div className="ProjectSubtitle">

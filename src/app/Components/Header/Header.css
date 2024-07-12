@@ -1,10 +1,20 @@
+html {
+    scroll-behavior: smooth;
+  }
+  
 .HeaderContainer{
     background: var(--yellow);
     height:4rem;
+    position: sticky;
     padding:0 10rem;
     display:flex;
     justify-content: space-between;
     align-items:center;
+    position: -webkit-sticky;
+    position: sticky;
+    top:0;
+    z-index:999;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
 .HeaderSocial{

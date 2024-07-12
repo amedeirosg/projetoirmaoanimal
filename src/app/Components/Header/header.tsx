@@ -5,15 +5,27 @@ import logo from "../../../assets/logo.png";
 import Image from "next/image";
 export default function Header() {
   return (
-    <div className="HeaderContainer">
+    <div className="HeaderContainer" id="home">
       <a href="/">
         <Image src={logo} alt="logo" width={50} height={50}></Image>
       </a>
       <nav className="HeaderNav">
-        <span className="navOptions">Início</span>
-        <span className="navOptions">Ações</span>
-        <span className="navOptions">Ajudar</span>
-        <span className="navOptions">Contato</span>
+        <Link href="#home" style={{ all: "unset" }}>
+          <span className="navOptions">Início</span>
+        </Link>
+        <Link href="#project" style={{ all: "unset" }}>
+          <span className="navOptions">Sobre</span>
+        </Link>
+        <Link href="#actions" style={{ all: "unset" }}>
+          <span className="navOptions">Ações</span>
+        </Link>
+        <Link href="#help" style={{ all: "unset" }}>
+          <span className="navOptions">Ajudar</span>
+        </Link>
+
+        <Link href="#contact" style={{ all: "unset" }}>
+          <span className="navOptions">Contato</span>
+        </Link>
       </nav>
       <div className="HeaderSocial">
         <Link

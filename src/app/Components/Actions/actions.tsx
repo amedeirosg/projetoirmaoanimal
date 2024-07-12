@@ -3,7 +3,7 @@ import "./Actions.css";
 import teste from "../../../assets/comedouro.jpeg";
 export default function Actions() {
   return (
-    <div className="ActionsContainer">
+    <div className="ActionsContainer" id="actions">
       <h2>Nossas ações</h2>
       <div className="ActionsArea">
         <div className="ActionsEachOne" id="actions1">

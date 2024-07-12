@@ -6,7 +6,7 @@ import dogs from "../../../assets/dogs.png";
 import house from "../../../assets/house.png";
 export default function Help() {
   return (
-    <div className="HelpContainer">
+    <div className="HelpContainer" id="help">
       <h2>Como ajudar?</h2>
       <div className="HelpArea group">
         <div className="HelpTags item">
