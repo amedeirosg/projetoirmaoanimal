@@ -3,8 +3,7 @@ import "./Project.css";
 import teste from "../../../assets/projetos.jpg";
 import teste2 from "../../../assets/bgHeroHeaderpng.png";
 import Image from "next/image";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
+
 import Slider from "react-slick";
 
 export default function Project() {
