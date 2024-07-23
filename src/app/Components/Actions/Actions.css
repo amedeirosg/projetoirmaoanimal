@@ -28,6 +28,19 @@
     font-weight: 500;
 }
 
+.ActionsInfo{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap:1rem;
+}
+
+.ImgsStyle{
+    width: 100%;
+    object-fit: cover;
+    border-radius:.5rem;
+}
+
 @media (max-width:1200px){
     .ActionsCatCaoCourseImg,.ActionsRaffleImgs,.ActionsAdoptedImgs{
         grid-template-columns: repeat(2,1fr);
@@ -48,8 +61,12 @@
         align-items: center;
     }
 
-    .ActionsSlider{
-        justify-content: center;
-        align-items: center;
+}
+
+@media(max-width:500px){
+    .ImgsStyle{
+        width: 100%;
+        height: 100%;
+        object-fit:cover ;
     }
 }
